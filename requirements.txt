@@ -1,0 +1,13 @@
+torch>=2.2
+torchvision>=0.17
+numpy
+opencv-python
+scikit-image
+scipy
+tqdm
+albumentations
+onnx
+onnxruntime
+streamlit
+pillow
+matplotlib
