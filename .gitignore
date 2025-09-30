@@ -1,0 +1,40 @@
+# Ignore dataset folders
+data/
+raw/
+images/
+outputs/
+
+# Ignore all images
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+
+# Ignore model weights and large binaries
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore VSCode and IDE settings
+.vscode/
+.idea/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore virtual environments
+venv/
+env/
