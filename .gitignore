@@ -38,3 +38,5 @@ logs/
 # Ignore virtual environments
 venv/
 env/
+.venv/
+.env/
