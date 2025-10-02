@@ -5,7 +5,7 @@ from skimage.morphology import skeletonize
 def load_sess(onnx_path):
     return ort.InferenceSession(onnx_path, providers=['CPUExecutionProvider'])
 
-def infer(sess, img, size=512):
+def infer(sess, img, size=256):
     imr = cv2.resize(img, (size,size))
     x = imr[:,:,::-1].astype(np.float32)/255.0
     x = np.transpose(x, (2,0,1))[None]
