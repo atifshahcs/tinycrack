@@ -1,12 +1,12 @@
 
-## 📦 Dataset
+## Dataset
 
 Uses a subset of **SDNET2018** datasets, which contain:
 - Concrete surfaces from **bridge decks**, **pavements**, and **walls**.  
 - Labeled as *cracked* or *non-cracked*. 
-- We utalized that dataset for Crack segmentation 
+- We utilized that dataset for Crack segmentation 
 
-Only a 3000 images are used, 2400 for training, 480 for validation and 600 for testing. Image size of 256×256 crops are needed for training and demonstration.
+Only 3000 images are used, 2400 for training, 480 for validation and 600 for testing. Image size of 256×256 crops are needed for training and demonstration.
 
 **Folder structure after preprocessing:**
 data/
@@ -34,6 +34,8 @@ python scripts/auto_masks.py --images data/images --out data/masks
 
 
 ### 3 Model training
+Model-related scripts are in the `model/` directory.
+
 Train the lightweight segmentation model:
 ```bash
 python -m tinycrack.train --images data/images --masks data/masks  --epochs 80 --batch 8 --alpha 0.5 --save outputs/runs/
