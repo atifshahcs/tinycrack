@@ -4,7 +4,7 @@ raw/
 images/
 outputs/
 # But keep small sample results
-!outputs_readme/
+!samples_readme/
 
 # Ignore all images
 *.jpg
