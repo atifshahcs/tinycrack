@@ -3,6 +3,7 @@ data/
 raw/
 images/
 outputs/
+
 # But keep small sample results
 !samples_readme/
 
@@ -42,3 +43,10 @@ venv/
 env/
 .venv/
 .env/
+
+# Ignore other folders
+app/
+
+# Ignore files
+model/register.py
+mode/export_onnx.py
