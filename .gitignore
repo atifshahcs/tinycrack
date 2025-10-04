@@ -3,6 +3,8 @@ data/
 raw/
 images/
 outputs/
+# But keep small sample results
+!outputs_readme/
 
 # Ignore all images
 *.jpg
