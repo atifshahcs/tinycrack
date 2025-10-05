@@ -59,3 +59,9 @@ python -m tinycrack.post --preds outputs/samples  --metric_csv outputs/samples/m
 | Original | Probability | Mask | Skeleton |
 |-----------|-------------|------|-----------|
 | ![orig](samples_readme/7010-192_0_0.png) | ![prob](samples_readme/7010-192_0_0_prob.png) | ![mask](samples_readme/7010-192_0_0_prob_mask.png) | ![skel](samples_readme/7010-192_0_0_prob_skel.png) |
+
+
+## Training Log
+
+See the full log here:  
+➡️ [training_log.txt](outputs/runs/tc1/training_log.txt)
