@@ -9,12 +9,14 @@ Uses a subset of **SDNET2018** datasets, which contain:
 Only a 3000 images are used, 2400 for training, 480 for validation and 600 for testing. Image size of 256×256 crops are needed for training and demonstration.
 
 **Folder structure after preprocessing:**
+````
 data/
 ├─ raw/ # original dataset (not uploaded)
 ├─ images/ # 256x256 training crops (mixed cracked/non-cracked)
 ├─ masks/ # binary crack masks
 ├─ test_images/ # unseen test images
 └─ test_masks/ # optional ground-truth masks for evaluation
+````
 
 ## Pre-processing
 
