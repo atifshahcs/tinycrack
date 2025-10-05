@@ -1,12 +1,12 @@
 
-## 📦 Dataset
+## Dataset
 
 Uses a subset of **SDNET2018** datasets, which contain:
 - Concrete surfaces from **bridge decks**, **pavements**, and **walls**.  
 - Labeled as *cracked* or *non-cracked*. 
-- We utalized that dataset for Crack segmentation 
+- We utilized that dataset for Crack segmentation 
 
-Only a 3000 images are used, 2400 for training, 480 for validation and 600 for testing. Image size of 256×256 crops are needed for training and demonstration.
+Only 3000 images are used, 2400 for training, 480 for validation and 600 for testing. An image size of 256×256 crops is needed for training and demonstration.
 
 **Folder structure after preprocessing:**
 ````
@@ -63,5 +63,30 @@ python -m tinycrack.post --preds outputs/samples  --metric_csv outputs/samples/m
 
 ## Training Log
 
+```
+Training and Validation Loss Log
+==================================================
+Run Parameters:
+  images: D:\ml_projects\tinycrack\data\images
+  masks: D:\ml_projects\tinycrack\data\masks
+  epochs: 80
+  lr: 0.0003
+  batch: 8
+  imgsz: 256
+  alpha: 0.5
+  save: outputs/runs/tc1
+============================================================
+
+2025-10-04 03:18:47 | Epoch 1: train_loss: 0.3547, val_loss: 0.2410
+2025-10-04 03:20:44 | Epoch 2: train_loss: 0.2300, val_loss: 0.1770
+2025-10-04 03:22:42 | Epoch 3: train_loss: 0.1731, val_loss: 0.1193
+2025-10-04 03:24:40 | Epoch 4: train_loss: 0.1388, val_loss: 0.0913
+2025-10-04 03:26:36 | Epoch 5: train_loss: 0.1226, val_loss: 0.0847
+.
+.
+.
+
+```
+
 See the full log here:  
-➡️ [training_log.txt](outputs/runs/tc1/training_log.txt)
+[training_log.txt](outputs/runs/tc1/training_log.txt)
