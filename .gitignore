@@ -6,6 +6,7 @@ outputs/
 
 # But keep small sample results
 !samples_readme/
+!outputs/runs/tc1/training_log.txt
 
 # Ignore all images
 *.jpg
